@@ -10,6 +10,10 @@ uv sync
 To run the full pipeline (data download, LSTM training, RL training):
 ```bash
 uv run src/ex3/sdk/ex3_sdk.py --all
+for test run:
+uv run pytest --cov=src
+results:
+<img width="1086" height="552" alt="image" src="https://github.com/user-attachments/assets/b7318ccc-3397-451c-a33a-93431beac59f" />
 ```
 
 ## 3. Examples and Demonstrations
@@ -23,6 +27,8 @@ Configuration is managed in `src/ex3/shared/config.py`. Do not hardcode paramete
 - Ensure 0 Ruff violations before committing.
 - Ensure > 85% test coverage.
 - Code should follow PEP 8 and max line length is 100.
+  
+
 
 ## 6. License & Credits
 - Dataset: [600K+ Fitness Exercise Dataset](https://www.kaggle.com/datasets/adnanelouardi/600k-fitness-exercise-and-workout-program-dataset) by Adnane Louardi.
