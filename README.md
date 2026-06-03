@@ -13,8 +13,8 @@ uv run src/ex3/sdk/ex3_sdk.py --all
 for test run:
 uv run pytest --cov=src
 results:
-<img width="1086" height="552" alt="image" src="https://github.com/user-attachments/assets/b7318ccc-3397-451c-a33a-93431beac59f" />
 ```
+<img width="1086" height="552" alt="image" src="https://github.com/user-attachments/assets/b7318ccc-3397-451c-a33a-93431beac59f" />
 
 ## 3. Examples and Demonstrations
 See `notebooks/` (if any) or run the SDK to view logs and generated graphs in the `results/` folder.
