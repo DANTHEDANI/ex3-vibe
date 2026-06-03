@@ -1,0 +1,35 @@
+[project]
+name = "ex3-vibe"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "kaggle>=2.2.0",
+    "matplotlib>=3.10.9",
+    "numpy>=2.4.6",
+    "pandas>=3.0.3",
+    "pytest>=9.0.3",
+    "pytest-cov>=7.1.0",
+    "python-dotenv>=1.2.2",
+    "ruff>=0.15.15",
+    "torch>=2.12.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E","F","W","I","N","UP","B","C4","SIM"]
+ignore = ["E501"]
+
+[tool.coverage.run]
+source = ["src"]
+omit = ["src/main.py", "*/tests/*", "src/**/gui/*"]
+
+[tool.coverage.report]
+fail_under = 85
